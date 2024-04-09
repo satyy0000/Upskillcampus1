@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/x-icon" href="url.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Shortner</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Workbench:SCAN@2&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: rgb(3, 42, 56);
+      background: linear-gradient(90deg, rgba(3, 42, 56, 1) 0%, rgba(9, 73, 121, 1) 51%, rgba(0, 159, 255, 1) 100%);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: aliceblue;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 40px;
+      font-family: "Workbench";
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      color: aliceblue;
+      margin-bottom: 5px;
+      font-size: 25px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    button[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2f6b31;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>URL Shortener</h1>
+  <form method="POST">
+    <label for="long_url">
+      <h4>Enter a long URL:</h4>
+    </label>
+    <input type="text" name="long_url" id="long_url" required>
+    <button type="submit">
+      <b>Shorten URL</b>
+    </button>
+  </form>
+
+</body>
+
+</html>
